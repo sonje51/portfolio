@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kari Severud | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-logo">Kari Severud</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Hi, I'm <span class="highlight">Kari Severud</span></h1>
+      <p class="hero-subtitle">CS Student | Game Dev Enthusiast</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <img src="images/portrait_looking_right.jpg" alt="Kari Severud" class="about-photo" />
+        <div class="about-text">
+          <p>
+            Hi, I'm Kari — a software developer and student at the University of Washington Bothell,
+            expected to graduate in Spring 2027. I enjoy building things that are clean, functional,
+            and purposeful, whether that's a website for a client or a game for fun.
+          </p>
+          <p>
+            Outside of coursework, I love making video games as a personal passion project.
+            I primarily work with Godot and am currently co-developing a single player, story driven
+            game with a close collaborator.
+          </p>
+          <p>
+            When I step away from the screen, you'll likely find me outside birdwatching and
+            enjoying everything nature has to offer.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-img placeholder-img"></div>
+          <div class="project-info">
+            <h3>Breakout by HuskyHawks</h3>
+            <p>A Breakout-style arcade game built as a class project with a small team. Contributed to code development and served as project manager.</p>
+            <div class="project-tags">
+              <span class="tag">C++</span>
+              <span class="tag">CMake</span>
+              <span class="tag">SFML</span>
+              <span class="tag">Project Management</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/sonje51/HuskyHawksFirstGame" target="_blank" rel="noopener" class="btn btn-sm btn-outline">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img placeholder-img"></div>
+          <div class="project-info">
+            <h3>Serenity Valley Ranch</h3>
+            <p>A website for Serenity Valley Ranch, a small business hosting weddings and private events at a residential venue. Developed solo, currently in progress.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">In Progress</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm">Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-categories">
+
+        <div class="skill-group">
+          <h4 class="skill-group-title skill-lang-title">Languages</h4>
+          <div class="skills-grid">
+            <div class="skill-item skill-lang">HTML &amp; CSS</div>
+            <div class="skill-item skill-lang">JavaScript</div>
+            <div class="skill-item skill-lang">C++</div>
+            <div class="skill-item skill-lang">Java</div>
+            <div class="skill-item skill-lang">Python</div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-title skill-framework-title">Frameworks &amp; Libraries</h4>
+          <div class="skills-grid">
+            <div class="skill-item skill-framework">SFML</div>
+            <div class="skill-item skill-framework">CMake</div>
+            <div class="skill-item skill-framework">Godot</div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-title skill-tool-title">Tools</h4>
+          <div class="skills-grid">
+            <div class="skill-item skill-tool">Git &amp; GitHub</div>
+            <div class="skill-item skill-tool">VS Code</div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-title skill-os-title">Operating Systems</h4>
+          <div class="skills-grid">
+            <div class="skill-item skill-os">Linux</div>
+            <div class="skill-item skill-os">Windows</div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-title skill-ai-title">Data &amp; AI</h4>
+          <div class="skills-grid">
+            <div class="skill-item skill-ai">TensorFlow</div>
+            <div class="skill-item skill-ai">NumPy</div>
+            <div class="skill-item skill-ai">Hugging Face</div>
+            <div class="skill-item skill-ai">Kaggle</div>
+            <div class="skill-item skill-ai">Seaborn</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-intro">Have a project in mind or want to connect? Reach out!</p>
+      <form class="contact-form">
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Kari Severud. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="https://github.com/sonje51" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/kari-severud/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
