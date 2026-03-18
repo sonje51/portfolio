@@ -20,15 +20,9 @@ const observer = new IntersectionObserver(
 
 sections.forEach((section) => observer.observe(section));
 
-// Contact form — placeholder handler
+// Contact form — show sending state while Formspree processes
 document.querySelector('.contact-form').addEventListener('submit', (e) => {
-  e.preventDefault();
   const btn = e.target.querySelector('button[type="submit"]');
-  btn.textContent = 'Sent!';
+  btn.textContent = 'Sending...';
   btn.disabled = true;
-  setTimeout(() => {
-    btn.textContent = 'Send Message';
-    btn.disabled = false;
-    e.target.reset();
-  }, 3000);
 });

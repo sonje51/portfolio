@@ -173,6 +173,12 @@ a {
   color: #fff;
 }
 
+.btn-disabled {
+  opacity: 0.6;
+  cursor: default;
+  pointer-events: none;
+}
+
 /* ===== About ===== */
 .about-content {
   display: flex;
@@ -233,6 +239,35 @@ a {
 
 .placeholder-img {
   background: linear-gradient(135deg, #1e1640 0%, #2a1f5e 100%);
+}
+
+.project-img-swap {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.project-img-swap img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.4s ease;
+}
+
+.project-img-swap .img-hover {
+  opacity: 0;
+}
+
+.project-card:hover .project-img-swap .img-default {
+  opacity: 0;
+}
+
+.project-card:hover .project-img-swap .img-hover {
+  opacity: 1;
 }
 
 .project-info {
