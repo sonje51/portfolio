@@ -203,6 +203,19 @@ a {
   font-size: 1.05rem;
 }
 
+.about-links {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.about-links-label {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
 @media (max-width: 640px) {
   .about-content {
     flex-direction: column;
